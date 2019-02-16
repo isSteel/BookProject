@@ -18,12 +18,12 @@
 
     3.1 Дизайн (.psd макет)
     3.2 Front-end:
-        * БЭМ (Block Element Modificator методология для описания стилей), 
-        * HTML5,
-        * CSS3 + SCSS, 
-        * JS (с React или jQuery при надобности),
-        * Gulp или Webpack как таск-менедженр,
-        * npm как менеджер пакетов(модулей)
+        - БЭМ (Block Element Modificator методология для описания стилей)
+        - HTML5
+        - CSS3 + SCSS
+        - JS (с React или jQuery при надобности)
+        - Gulp или Webpack как таск-менедженр
+        - npm как менеджер пакетов(модулей)
     3.3 Back-end: Node.js  + Express3 (серверный фреймворк) + mongoDB (БД)
 
 ## 4. Безопасность 
