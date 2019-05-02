@@ -10,7 +10,6 @@
     "gulp-autoprefixer": "^6.0.0",
     "gulp-sass": "^4.0.2",
     "gulp-sourcemaps": "^2.6.4",
-    "express": "^4.16.4",
-    "tar": ">=4.4.2"
+    "express": "^4.16.4"
   }
 }
