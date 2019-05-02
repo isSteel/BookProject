@@ -30,7 +30,7 @@ gulp.task('css', function () {
         .pipe(sass().on('error', sass.logError))
         .pipe(autoprefixer('last 10 version', 'ie 11'))
         .pipe(sourcemaps.write())
-        .pipe(gulp.dest('public/css'))
+        .pipe(gulp.dest('public/css/sass'))
         .pipe(browserSync.stream());
 });
 
