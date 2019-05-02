@@ -1,0 +1,20 @@
+.banner {
+    background: rgba($white-color, .3) url("../../img/main-background.jpg");
+    background-blend-mode: screen;
+    background-size: cover;
+    text-align: center;
+    p {
+        font-family: 'Rochester', cursive;
+        margin: 75px 0 75px 0;
+        &.small {
+            font-size: 3rem;
+        }
+        &.medium {
+            font-size: 4rem;
+        }
+        &.big {
+            font-family: 'Righteous', cursive;
+            font-size: 5rem;
+        }
+    }
+}

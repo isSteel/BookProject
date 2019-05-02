@@ -1,0 +1,62 @@
+.header {
+    padding: 20px 0 20px 0;
+    color: $menu-color;
+    text-shadow: 2px 2px 3px rgba($menu-color, .4);
+    &__logo {
+        display: flex;
+        justify-content: center;
+        &-image {
+            background: url("../../img/logo.png") no-repeat center;
+            min-width: 64px;
+            height: 64px;
+            border: 1px solid $black-color;
+            padding: 3px;
+        }
+        &-phrase {
+            line-height: 1.5em;
+            padding-left: 3px;
+        }
+    }
+    &__menu {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 16px;
+        li {
+            font-size: 2rem;
+            &:nth-child(2n+1) {
+                border: 2px solid $menu-color;
+                box-shadow: 2px 2px 3px rgba($menu-color, .4);
+            }
+            a {
+                transition: border-bottom .1s;
+                &:hover {
+                    border-bottom: 3px solid $menu-color;
+                }
+            }
+        }
+    }
+    &__login {
+        display: flex;
+        justify-content: space-around;
+        padding-top: 16px;
+        &-image {
+            background: url("../../img/login.png") no-repeat center;
+            background-size: cover;
+            min-width: 32px;
+            height: 32px;
+            border: 1px solid $black-color;
+            &:hover + div > span {
+                border-bottom: 3px solid $menu-color;
+            }
+        }
+        &-text {
+            font-size: 2rem;
+            span {
+                transition: border-bottom .1s;
+                &:hover {
+                    border-bottom: 3px solid $menu-color;
+                }
+            }
+        }
+    }
+}
