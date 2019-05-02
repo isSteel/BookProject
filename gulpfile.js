@@ -9,7 +9,7 @@ const autoprefixer = require('gulp-autoprefixer');
 gulp.task('browser-sync', function() {
     browserSync.init({
         server: {
-            baseDir: "public/"
+            baseDir: "docs/"
         }
     });
 });
@@ -18,7 +18,7 @@ gulp.task('browser-sync', function() {
 //html
 gulp.task('html', function () {
     gulp.src('src/*.html')
-        .pipe(gulp.dest('public/'))
+        .pipe(gulp.dest('docs/'))
         .pipe(browserSync.stream());
 });
 
@@ -30,7 +30,7 @@ gulp.task('css', function () {
         .pipe(sass().on('error', sass.logError))
         .pipe(autoprefixer('last 10 version', 'ie 11'))
         .pipe(sourcemaps.write())
-        .pipe(gulp.dest('public/css/sass'))
+        .pipe(gulp.dest('docs/css/sass'))
         .pipe(browserSync.stream());
 });
 
@@ -38,7 +38,7 @@ gulp.task('css', function () {
 //img
 gulp.task('img', function () {
     gulp.src('src/img/**/*.*')
-        .pipe(gulp.dest('public/img'))
+        .pipe(gulp.dest('docs/img'))
         .pipe(browserSync.stream());
 });
 
@@ -46,7 +46,7 @@ gulp.task('img', function () {
 //js
 gulp.task('js', function () {
     gulp.src('src/js/**/*.*')
-        .pipe(gulp.dest('public/js'))
+        .pipe(gulp.dest('docs/js'))
         .pipe(browserSync.stream());
 });
 
