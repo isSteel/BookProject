@@ -17,4 +17,24 @@
             font-size: 5rem;
         }
     }
+    &__indicator {
+        position: absolute;
+        display: inline-block;
+        justify-content: center;
+        border-bottom: 3px solid $black-color;
+        animation: move 2s ease-in-out infinite;
+        &-circle {
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            background-color: $black-color;
+            border-radius: 50%;
+        }
+    }
+}
+
+@keyframes move {
+    0% { top: 15px; }
+    50% { top: 25px; }
+    100% { top: 15px; }
 }
