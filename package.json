@@ -1,0 +1,15 @@
+{
+  "name": "your-book-club-project",
+  "version": "1.0.0",
+  "dependencies": {
+    "npm": "^6.4.1"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.26.3",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.4",
+    "express": "^4.16.4"
+  }
+}
