@@ -18,6 +18,168 @@
             text-align: justify;
             padding: 0 15% 0 10%;
         }
+        &__photo {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            .square-first {
+                position: absolute;
+                top: -10%;
+                bottom: 0;
+                left: 5%;
+                right: 15%;
+                background-color: #171717;
+                z-index: 100;
+            }
+            .rectangle-first {
+                position: absolute;
+                display: flex;
+                justify-content: center;
+                top: -20%;
+                bottom: -20%;
+                left: 20%;
+                right: 30%;
+                background-color: #ddd;
+                z-index: 101;
+                p {
+                    align-self: flex-end;
+                    padding: 0;
+                    margin-bottom: 5%;
+                    font-size: 1.2em;
+                    border-bottom: 1px solid $black-color;
+                }
+            }
+            .photo-first {
+                position: absolute;
+                background: #ccc url("../../img/content-photo-1.jpg");
+                background-size: cover;
+                top: 0;
+                bottom: 10%;
+                left: 10%;
+                right: 20%;
+                z-index: 102;
+            }
+            .square-second {
+                position: absolute;
+                top: -20%;
+                bottom: 30%;
+                left: 5%;
+                right: 12%;
+                background-color: #171717;
+                z-index: 100;
+            }
+            .square-second-2 {
+                position: absolute;
+                top: 0;
+                bottom: -20%;
+                left: 8%;
+                right: 15%;
+                background-color: #171717;
+                z-index: 100;
+            }
+            .rectangle-second {
+                position: absolute;
+                display: flex;
+                justify-content: center;
+                top: -5%;
+                bottom: 5%;
+                left: 12%;
+                right: 20%;
+                background-color: #ddd;
+                z-index: 102;
+                p {
+                    align-self: flex-start;
+                    padding: 0;
+                    margin-top: 4%;
+                    font-size: 1.1rem;
+                    border-bottom: 1px solid $black-color;
+                }
+            }
+            .rectangle-second-slim {
+                position: absolute;
+                top: -10%;
+                bottom: -10%;
+                left: 18%;
+                right: 70%;
+                background-color: #ddd;
+                z-index: 101;
+            }
+            .photo-second {
+                position: absolute;
+                background: #ccc url("../../img/content-photo-2.jpg");
+                background-size: cover;
+                top: 10%;
+                bottom: 10%;
+                left: 8%;
+                right: 10%;
+                z-index: 103;
+            }
+            .square-third {
+                position: absolute;
+                top: -18%;
+                bottom: -20%;
+                left: 15%;
+                right: 12%;
+                background-color: #171717;
+                z-index: 102;
+            }
+            .square-third-2 {
+                position: absolute;
+                top: 5%;
+                bottom: 8%;
+                left: 3%;
+                right: 15%;
+                background-color: #171717;
+                z-index: 102;
+            }
+            .rectangle-third {
+                position: absolute;
+                top: -10%;
+                bottom: -10%;
+                left: 8%;
+                right: 20%;
+                background-color: #a3a0a0;
+                z-index: 100;
+            }
+            .rectangle-third-slim {
+                position: absolute;
+                top: -25%;
+                bottom: -10%;
+                left: 65%;
+                right: 20%;
+                background-color: #ebe8e8;
+                z-index: 101;
+            }
+            .photo-third {
+                position: absolute;
+                background: #ccc url("../../img/content-photo-3.jpg");
+                background-size: cover;
+                top: -5%;
+                bottom: 15%;
+                left: 14%;
+                right: 25%;
+                z-index: 103;
+            }
+            .rectangle-third-inv {
+                position: absolute;
+                display: flex;
+                justify-content: center;
+                top: 70%;
+                bottom: -5%;
+                left: 25%;
+                right: 30%;
+                background-color: transparent;
+                z-index: 102;
+                p {
+                    color: #a0a0a0;
+                    align-self: flex-end;
+                    padding: 0;
+                    margin-top: 5%;
+                    font-size: 1.1rem;
+                    border-bottom: 1px solid #a0a0a0;
+                }
+            }
+        }
     }
 }
 @media (max-width: 1199px) {

@@ -2,6 +2,7 @@
     background: rgba($white-color, .3) url("../../img/main-background.jpg");
     background-blend-mode: screen;
     background-size: cover;
+    background-attachment: fixed;
     text-align: center;
     p {
         font-family: 'Rochester', cursive;
