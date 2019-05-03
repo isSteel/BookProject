@@ -38,9 +38,14 @@ a {
 p {
     margin: 0;
 }
-@media (max-width: 767px) {
+@media (max-width: 991px) {
     html, body {
         font-size: .7rem;
+    }
+}
+@media (max-width: 767px) {
+    html, body {
+        font-size: .6rem;
     }
 }
 @media (max-width: 575px) {

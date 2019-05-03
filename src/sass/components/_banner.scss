@@ -3,7 +3,6 @@
     background-blend-mode: screen;
     background-size: cover;
     text-align: center;
-    margin-bottom: 70px;
     p {
         font-family: 'Rochester', cursive;
         line-height: 10rem;
@@ -19,18 +18,28 @@
             font-size: 5rem;
         }
     }
-    &__indicator {
-        cursor: default;
-        position: absolute;
-        display: inline-block;
+}
+.indicator {
+    cursor: default;
+    text-align: center;
+    margin-bottom: 70px;
+    p {
         border-bottom: 2px solid $black-color;
-        top: 30px;
-        &-circle {
-            display: inline-block;
-            width: 7px;
-            height: 7px;
-            background-color: $black-color;
-            border-radius: 50%;
+        display: inline-block;
+        font-size: 64px;
+    }
+}
+@media (max-width: 1199px) {
+    .indicator {
+        p {
+            font-size: 48px;
+        }
+    }
+}
+@media (max-width: 991px) {
+    .indicator {
+        p {
+            font-size: 32px;
         }
     }
 }
