@@ -3,8 +3,8 @@
     color: $menu-color;
     text-shadow: 2px 2px 3px rgba($menu-color, .4);
     &__logo {
-        display: flex;
         justify-content: center;
+        display: flex;
         &-image {
             background: url("../../img/logo.png") no-repeat center;
             min-width: 64px;
@@ -15,17 +15,20 @@
         &-phrase {
             line-height: 1.5em;
             padding-left: 3px;
+            align-self: center;
         }
     }
     &__menu {
         display: flex;
         justify-content: space-between;
-        padding-top: 16px;
         li {
             font-size: 2rem;
             &:nth-child(2n+1) {
                 border: 2px solid $menu-color;
                 box-shadow: 2px 2px 3px rgba($menu-color, .4);
+            }
+            &:nth-child(n+1) {
+                margin: 0 1px 0 1px;
             }
             a {
                 transition: border-bottom .1s;
@@ -38,7 +41,6 @@
     &__login {
         display: flex;
         justify-content: space-around;
-        padding-top: 16px;
         &-image {
             background: url("../../img/login.png") no-repeat center;
             background-size: cover;
@@ -51,6 +53,7 @@
         }
         &-text {
             font-size: 2rem;
+            align-self: center;
             span {
                 transition: border-bottom .1s;
                 &:hover {
@@ -58,5 +61,20 @@
                 }
             }
         }
+    }
+    .col-center {
+        align-self: center;
+    }
+}
+@media (max-width: 767px) {
+    .header__logo-image {
+        min-width: 48px;
+        height: 48px;
+        background-size: cover;
+    }
+    .header__login-image {
+        min-width: 24px;
+        height: 24px;
+        background-size: cover;
     }
 }
