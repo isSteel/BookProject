@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Login : Your Book Club</title>
+	<link rel="icon" type="image/png" href="img/logo.png">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/sass/bootstrap-grid.min.css">
+	<link rel="stylesheet" href="css/sass/normalize.css">
+	<link rel="stylesheet" href="css/sass/style.css">
+</head>
+<body>
+<div class="main-container">
+
+	<header class="header">
+		<div class="container">
+			<div class="row">
+				<div class="col-2 col-center">
+					<a href="index.html" class="header__logo">
+						<div class="header__logo-image"></div>
+						<div class="header__logo-phrase">
+							<p>Your</p>
+							<p>Book</p>
+							<p>Club</p>
+						</div>
+					</a>
+				</div>
+				<div class="col-8 col-center">
+					<ul class="header__menu">
+						<li></li>
+						<li><a href="index.html">Home</a></li>
+						<li></li>
+						<li><a href="#">Books</a></li>
+						<li></li>
+						<li><a href="#">Authors</a></li>
+						<li></li>
+						<li><a href="#">Contacts</a></li>
+						<li></li>
+					</ul>
+				</div>
+				<div class="col-2 col-center">
+					<a href="#" class="header__login">
+						<div class="header__login-text"><span class="active">Login</span></div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div class="form">
+		<div class="container">
+			<div class="row">
+				<div class="col-1"></div>
+				<div class="col-10 form__container">
+					<div class="form__container__line"></div>
+					<div class="form__container__reg">
+						<h3>Registration</h3>
+						<button type="button">
+							Registration
+						</button>
+						<p>or<br>you may also connect with</p>
+						<ul class="form__container__reg-social">
+							<li><a class="social-img" id="facebook" href="#"></a><a class="social-text" href="#">
+								Facebook</a></li>
+							<li><a class="social-img" id="gmail" href="#"></a><a class="social-text" href="#">Gmail</a></li>
+							<li><a class="social-img" id="twitter" href="#"></a><a class="social-text" href="#">Twitter</a></li>
+							<li><a class="social-img" id="instagram" href="#"></a><a class="social-text"	href="#">Instagram</a></li>
+						</ul>
+					</div>
+					<div class="form__container__log">
+						<h3>Login</h3>
+						<form action="#">
+							<label for="log-email">Username or Email</label>
+							<input type="email" id="log-email" required>
+							<label for="log-password">Password</label>
+							<input type="password" id="log-password" required>
+							<div class="checkbox">
+								<input type="checkbox" id="log-remember" class="checkbox__input">
+								<label for="log-remember" class="checkbox__label">Remember me</label>
+							</div>
+							<button type="submit">Login</button>
+							<p><a href="#">Reset Password?</a></p>
+						</form>
+					</div>
+				</div>
+				<div class="col-1"></div>
+			</div>
+		</div>
+	</div>
+
+</div>
+</body>
+</html>

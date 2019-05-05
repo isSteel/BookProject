@@ -1,0 +1,169 @@
+.form {
+    padding: 50px 0 50px 0;
+    background: rgba($white-color, .3) url("../../img/main-background.jpg");
+    background-blend-mode: screen;
+    background-size: cover;
+    &__container {
+        background-color: rgba($white-color, .5);
+        background-blend-mode: screen;
+        border: 3px solid $black-color;
+        display: flex;
+        padding: 0;
+        font-size: 1.5em;
+        height: 60vh;
+        h3 {
+            text-align: center;
+            font-size: 2rem;
+            margin: 20px 0 20px 0;
+            font-weight: 400;
+        }
+        button {
+            background-color: #C4C4C4;
+            border-radius: 10px;
+            padding: 5px 30px;
+            align-self: center;
+            outline: none;
+        }
+        &__line {
+            position: absolute;
+            height: 100%;
+            left: 50%;
+            border-left: 1px solid #aaa;
+        }
+        &__log {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            form {
+                display: flex;
+                flex-direction: column;
+                width: 80%;
+                align-self: center;
+                input {
+                    margin: 5px 0 20px 0;
+                    border: 2px solid black;
+                    height: 100%;
+                    outline: none;
+                    box-shadow: 0 3px 3px rgba($black-color, .3);
+                }
+                p {
+                    font-size: .6em;
+                    text-align: center;
+                    margin: 20px 0 10px 0;
+                    a {
+                        border-bottom: 1px solid #aaa;
+                    }
+                }
+            }
+            .checkbox {
+                margin-bottom: 20px;
+                position: relative;
+                &__input {
+                    -webkit-appearance: none;
+                    -moz-appearance: none;
+                    appearance: none;
+                    border: none;
+                    margin: 0;
+                    position: absolute;
+                    &:checked + .checkbox__label:after {
+                        opacity: 1;
+                    }
+                }
+                &__label {
+                    padding-left: 25px;
+                    font-size: .9em;
+                    &:before {
+                        content: "";
+                        display: block;
+                        width: 20px;
+                        height: 20px;
+                        border: 3px solid transparent;
+                        border-image: linear-gradient(to top, $white-color, $black-color) 3 repeat;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        z-index: 1;
+                    }
+                    &:after {
+                        content: "";
+                        display: block;
+                        width: 20px;
+                        height: 20px;
+                        position: absolute;
+                        background: url("../../img/check.png");
+                        background-size: cover;
+                        opacity: 0;
+                        top: 0;
+                        left: 0;
+                        z-index: 2;
+                    }
+                }
+            }
+        }
+        &__reg {
+            width: 50%;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            button {
+                font-size: 1.7rem;
+            }
+            &-social {
+                display: flex;
+                flex-direction: column;
+                align-self: center;
+                li {
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 5px;
+                    a.social-img {
+                        display: inline-block;
+                        width: 36px;
+                        height: 36px;
+                        border-radius: 50%;
+                    }
+                    a.social-text {
+                        margin-left: 10px;
+                        border-bottom: 1px solid #aaa;
+                    }
+                    a#facebook {
+                        background: url(../../img/social-facebook.png) no-repeat center;
+                        background-size: contain;
+                    }
+                    a#gmail {
+                        background: url(../../img/social-google.png) no-repeat center;
+                        background-size: contain;
+                    }
+                    a#twitter {
+                        background: url(../../img/social-twitter.png) no-repeat center;
+                        background-size: contain;
+                    }
+                    a#instagram {
+                        background: url(../../img/social-instagram.png) no-repeat center;
+                        background-size: contain;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 991px) {
+    a#facebook,
+    a#twitter,
+    a#instagram,
+    a#gmail {
+        width: 24px;
+        height: 24px;
+    }
+}
+@media (max-width: 767px) {
+    a#facebook,
+    a#twitter,
+    a#instagram,
+    a#gmail {
+        width: 16px;
+        height: 16px;
+    }
+}
